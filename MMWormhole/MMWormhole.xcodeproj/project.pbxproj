@@ -29,6 +29,7 @@
 		9B44A51C1B00572E00C9969A /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B44A4801B0055F500C9969A /* MMWormhole.m */; };
 		9B44A51D1B00572E00C9969A /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B44A47F1B0055F500C9969A /* MMWormhole.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B44A51E1B00572E00C9969A /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B44A4801B0055F500C9969A /* MMWormhole.m */; };
+		B5E4EA5F2472A32300F48B38 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4EA5D2472A32200F48B38 /* Codable.swift */; };
 		E9DBE1651B7DFA7200C9A9B5 /* MMWormholeUmbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9DBE1641B7DFA7200C9A9B5 /* MMWormholeUmbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9DBE1661B7DFA7200C9A9B5 /* MMWormholeUmbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9DBE1641B7DFA7200C9A9B5 /* MMWormholeUmbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		9B44A4801B0055F500C9969A /* MMWormhole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMWormhole.m; sourceTree = "<group>"; };
 		9B44A4C61B00570E00C9969A /* MMWormhole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B44A5021B00571F00C9969A /* MMWormhole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E4EA5D2472A32200F48B38 /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		E9DBE1641B7DFA7200C9A9B5 /* MMWormholeUmbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMWormholeUmbrella.h; path = MMWormhole/MMWormholeUmbrella.h; sourceTree = SOURCE_ROOT; };
 		E9DBE1671B7DFAD400C9A9B5 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 		9B44A47E1B0055F500C9969A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				B5E4EA502472A23100F48B38 /* Extensions */,
 				9B44A47F1B0055F500C9969A /* MMWormhole.h */,
 				9B44A4801B0055F500C9969A /* MMWormhole.m */,
 				55030BD61B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.h */,
@@ -131,6 +134,14 @@
 			);
 			name = Source;
 			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		B5E4EA502472A23100F48B38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4EA5D2472A32200F48B38 /* Codable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,9 +225,11 @@
 				TargetAttributes = {
 					9B44A4C51B00570E00C9969A = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 1140;
 					};
 					9B44A5011B00571F00C9969A = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -225,6 +238,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 9B44A4581B0055C500C9969A;
@@ -264,6 +278,7 @@
 				55030BDC1B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.m in Sources */,
 				55AB6EF51BA77D8F003908DC /* MMWormholeSession.m in Sources */,
 				55AB6EF91BA77D8F003908DC /* MMWormholeSessionContextTransiting.m in Sources */,
+				B5E4EA5E2472A32300F48B38 /* Codable.swift in Sources */,
 				55030BE01B165D8F005EFC19 /* MMWormholeFileTransiting.m in Sources */,
 				9B44A51C1B00572E00C9969A /* MMWormhole.m in Sources */,
 				55AB6F011BA77D8F003908DC /* MMWormholeSessionMessageTransiting.m in Sources */,
@@ -276,6 +291,7 @@
 			files = (
 				55030BDD1B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.m in Sources */,
 				55030BE11B165D8F005EFC19 /* MMWormholeFileTransiting.m in Sources */,
+				B5E4EA5F2472A32300F48B38 /* Codable.swift in Sources */,
 				9B44A51E1B00572E00C9969A /* MMWormhole.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -415,6 +432,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MMWormhole;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -422,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -435,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MMWormhole;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -442,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -459,6 +481,8 @@
 				PRODUCT_NAME = MMWormhole;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -466,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -479,6 +504,7 @@
 				PRODUCT_NAME = MMWormhole;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
