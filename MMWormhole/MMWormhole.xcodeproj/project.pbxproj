@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277659B92653FC7D00D0C7A3 /* MMQueuedWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 277659B62653FC7D00D0C7A3 /* MMQueuedWormhole.m */; };
+		277659BA2653FC7D00D0C7A3 /* MMQueuedWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 277659B62653FC7D00D0C7A3 /* MMQueuedWormhole.m */; };
+		277659BB2653FC7D00D0C7A3 /* MMWormhole-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 277659B72653FC7D00D0C7A3 /* MMWormhole-Private.h */; };
+		277659BC2653FC7D00D0C7A3 /* MMWormhole-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 277659B72653FC7D00D0C7A3 /* MMWormhole-Private.h */; };
+		277659BD2653FC7D00D0C7A3 /* MMQueuedWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = 277659B82653FC7D00D0C7A3 /* MMQueuedWormhole.h */; };
+		277659BE2653FC7D00D0C7A3 /* MMQueuedWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = 277659B82653FC7D00D0C7A3 /* MMQueuedWormhole.h */; };
 		55030BDA1B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 55030BD61B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55030BDB1B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 55030BD61B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55030BDC1B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 55030BD71B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.m */; };
@@ -35,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		277659B62653FC7D00D0C7A3 /* MMQueuedWormhole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMQueuedWormhole.m; sourceTree = "<group>"; };
+		277659B72653FC7D00D0C7A3 /* MMWormhole-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-Private.h"; sourceTree = "<group>"; };
+		277659B82653FC7D00D0C7A3 /* MMQueuedWormhole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMQueuedWormhole.h; sourceTree = "<group>"; };
 		55030BD61B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWormholeCoordinatedFileTransiting.h; sourceTree = "<group>"; };
 		55030BD71B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMWormholeCoordinatedFileTransiting.m; sourceTree = "<group>"; };
 		55030BD81B165D8F005EFC19 /* MMWormholeFileTransiting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWormholeFileTransiting.h; sourceTree = "<group>"; };
@@ -116,6 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				B5E4EA502472A23100F48B38 /* Extensions */,
+				277659B82653FC7D00D0C7A3 /* MMQueuedWormhole.h */,
+				277659B62653FC7D00D0C7A3 /* MMQueuedWormhole.m */,
+				277659B72653FC7D00D0C7A3 /* MMWormhole-Private.h */,
 				9B44A47F1B0055F500C9969A /* MMWormhole.h */,
 				9B44A4801B0055F500C9969A /* MMWormhole.m */,
 				55030BD61B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.h */,
@@ -152,12 +164,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				55AB6EF31BA77D8F003908DC /* MMWormholeSession.h in Headers */,
+				277659BB2653FC7D00D0C7A3 /* MMWormhole-Private.h in Headers */,
 				55AB6EF71BA77D8F003908DC /* MMWormholeSessionContextTransiting.h in Headers */,
 				55030BDE1B165D8F005EFC19 /* MMWormholeFileTransiting.h in Headers */,
 				E9DBE1651B7DFA7200C9A9B5 /* MMWormholeUmbrella.h in Headers */,
 				9B44A51B1B00572E00C9969A /* MMWormhole.h in Headers */,
 				55AB6EFF1BA77D8F003908DC /* MMWormholeSessionMessageTransiting.h in Headers */,
 				55AB6EFB1BA77D8F003908DC /* MMWormholeSessionFileTransiting.h in Headers */,
+				277659BD2653FC7D00D0C7A3 /* MMQueuedWormhole.h in Headers */,
 				55030BDA1B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.h in Headers */,
 				55AB6F031BA77D8F003908DC /* MMWormholeTransiting.h in Headers */,
 			);
@@ -172,6 +186,8 @@
 				9B44A51D1B00572E00C9969A /* MMWormhole.h in Headers */,
 				55030BDB1B165D8F005EFC19 /* MMWormholeCoordinatedFileTransiting.h in Headers */,
 				55AB6F041BA77D8F003908DC /* MMWormholeTransiting.h in Headers */,
+				277659BE2653FC7D00D0C7A3 /* MMQueuedWormhole.h in Headers */,
+				277659BC2653FC7D00D0C7A3 /* MMWormhole-Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +295,7 @@
 				55AB6EF51BA77D8F003908DC /* MMWormholeSession.m in Sources */,
 				55AB6EF91BA77D8F003908DC /* MMWormholeSessionContextTransiting.m in Sources */,
 				55030BE01B165D8F005EFC19 /* MMWormholeFileTransiting.m in Sources */,
+				277659B92653FC7D00D0C7A3 /* MMQueuedWormhole.m in Sources */,
 				9B44A51C1B00572E00C9969A /* MMWormhole.m in Sources */,
 				55AB6F011BA77D8F003908DC /* MMWormholeSessionMessageTransiting.m in Sources */,
 			);
@@ -292,6 +309,7 @@
 				55030BE11B165D8F005EFC19 /* MMWormholeFileTransiting.m in Sources */,
 				B5E4EA5F2472A32300F48B38 /* Codable.swift in Sources */,
 				9B44A51E1B00572E00C9969A /* MMWormhole.m in Sources */,
+				277659BA2653FC7D00D0C7A3 /* MMQueuedWormhole.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

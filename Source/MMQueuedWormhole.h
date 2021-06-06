@@ -21,12 +21,13 @@
  that return an array of all queued objects at once, these are messagesWithIdentifier: and
  listenForMessagesWithIdentifier: (pluralized), documented below.
  */
+NS_SWIFT_NAME(QueuedWormhole)
 @interface MMQueuedWormhole : MMWormhole
 
 /**
  This method returns the value of all queued messages with a specific identifier as an array of
  objects, in order they were posted.
- 
+
  @param identifier The identifier for the message
  @return In-order array of posted messages
  */
@@ -38,22 +39,23 @@
  the actual message objects in order they were posted. The block is usually passed an array of one
  single object, but, primarily, when this listen method is first called and there are multiple
  queued messages, that's when the block will be passed an array of multiple objects.
- Also if the application is not running when mutliple messages are posted, when the app is brought
+ Also if the application is not running when multiple messages are posted, when the app is brought
  to the foreground then the listener block will also be passed an array of multiple objects.
- 
+
  @discussion This class only supports one listener per message identifier, so calling this method
  repeatedly for the same identifier will update the listener block that will be called when
  messages are heard.
- 
+
  @param identifier The identifier for the message
  @param listener A listener block called with the messageObjects parameter when a notification
  is observed, or called immediately if messages are queued at the time.
  */
 - (void)listenForMessagesWithIdentifier:(NSString *)identifier
-                               listener:(void (^)(NSArray *messageObjects))listener;
+                               listener:(void (^)(NSArray *messageObjects))listener
+NS_SWIFT_NAME(listenForMessages(identifier:listener:));
 
 /**
- This method is synonomous with stopListeningForMessageWithIdentifier: (name is pluralized).
+ This method is synonymous with stopListeningForMessageWithIdentifier: (name is pluralized).
  It should be used to balance calls to listenForMessagesWithIdentifier:listener:, although
  currently calling either would work (but that may not be true in future versions of this class).
  */
@@ -61,5 +63,6 @@
 
 @end
 
+NS_SWIFT_NAME(QueuedWormholeFileTransiting)
 @interface MMQueuedWormholeFileTransiting : MMWormholeFileTransiting
 @end
