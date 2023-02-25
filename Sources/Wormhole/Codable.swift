@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MMWormhole
 
 public protocol Wormholable: Codable {
     static var identifier: String { get }

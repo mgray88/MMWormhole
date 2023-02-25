@@ -1,0 +1,6 @@
+module MMWormhole {
+  umbrella header "MMWormholeUmbrella.h"
+
+  export *
+  module * { export * }
+}

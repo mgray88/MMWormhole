@@ -28,6 +28,7 @@
  and implements message transiting in a similar way but using NSFileCoordinator for its file
  reading and writing.
  */
+NS_SWIFT_NAME(WormholeCoordinatedFileTransiting)
 @interface MMWormholeCoordinatedFileTransiting : MMWormholeFileTransiting
 
 /**

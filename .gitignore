@@ -26,3 +26,6 @@ DerivedData
 .DS_Store
 Example/.DS_Store
 Example/MMWormhole/.DS_Store
+.swiftpm/
+
+.build/

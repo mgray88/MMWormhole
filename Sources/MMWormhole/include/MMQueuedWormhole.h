@@ -59,7 +59,8 @@ NS_SWIFT_NAME(listenForMessages(identifier:listener:));
  It should be used to balance calls to listenForMessagesWithIdentifier:listener:, although
  currently calling either would work (but that may not be true in future versions of this class).
  */
-- (void)stopListeningForMessagesWithIdentifier:(NSString *)identifier;
+- (void)stopListeningForMessagesWithIdentifier:(NSString *)identifier
+NS_SWIFT_NAME(stopListeningForMessages(identifier:));
 
 @end
 

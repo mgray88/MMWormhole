@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
   s.watchos.frameworks = 'Foundation', 'WatchConnectivity'
   
   s.subspec 'Core' do |core|
-    core.ios.source_files = 'Source/*.{h,m}', 'Source/Extensions/*.swift'
-    core.watchos.source_files = 'Source/*.{h,m}', 'Source/Extensions/*.swift'
-    core.osx.source_files = 'Source/MMWormhole.{h,m}', 'Source/MMWormholeFileTransiting.{h,m}', 'Source/MMWormholeCoordinatedFileTransiting.{h,m}', 'Source/MMWormholeTransiting.h'
+    core.ios.source_files = 'Sources/MMWormhole/**/*.{h,m}', 'Sources/Wormhole/*.swift'
+    core.watchos.source_files = 'Sources/MMWormhole/**/*.{h,m}', 'Source/Wormhole/*.swift'
+    core.osx.source_files = 'Sources/MMWormhole/**/MMWormhole.{h,m}', 'Sources/MMWormhole/**/MMWormholeFileTransiting.{h,m}', 'Sources/MMWormhole/**/MMWormholeCoordinatedFileTransiting.{h,m}', 'Sources/MMWormhole/include/MMWormholeTransiting.h'
   end  
 end

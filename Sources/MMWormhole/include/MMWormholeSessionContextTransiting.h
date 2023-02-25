@@ -39,6 +39,7 @@
  context provides the best of both real time message passing and baked in state persistence for
  setting up your UI.
  */
+NS_SWIFT_NAME(WormholeSessionContextTransiting)
 @interface MMWormholeSessionContextTransiting : MMWormholeFileTransiting
 
 @end

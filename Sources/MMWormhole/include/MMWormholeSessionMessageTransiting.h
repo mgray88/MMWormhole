@@ -43,6 +43,7 @@
  iPhone app is running to receive a message and take some action on it. One example of this would be
  to start background location tracking or audio.
  */
+NS_SWIFT_NAME(WormholeSessionMessageTransiting)
 @interface MMWormholeSessionMessageTransiting : MMWormholeFileTransiting
 
 @end

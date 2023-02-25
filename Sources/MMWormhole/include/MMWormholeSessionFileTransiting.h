@@ -42,6 +42,7 @@
  is provided as a basic implementation for simple use cases and isn't intended to be the core of
  your file based message transfer system.
  */
+NS_SWIFT_NAME(WormholeSessionFileTransiting)
 @interface MMWormholeSessionFileTransiting : MMWormholeFileTransiting
 
 @end

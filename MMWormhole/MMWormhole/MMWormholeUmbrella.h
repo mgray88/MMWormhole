@@ -15,6 +15,7 @@ FOUNDATION_EXPORT double MMWormholeVersionNumber;
 FOUNDATION_EXPORT const unsigned char MMWormholeVersionString[];
 
 #import <MMWormhole/MMWormhole.h>
+#import <MMWormhole/MMQueuedWormhole.h>
 #import <MMWormhole/MMWormholeFileTransiting.h>
 #import <MMWormhole/MMWormholeCoordinatedFileTransiting.h>
 

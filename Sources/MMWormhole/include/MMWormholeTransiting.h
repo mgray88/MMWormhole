@@ -31,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  case it involves both the reading and writing of messages as well as the deletion of message
  contents.
  */
+NS_SWIFT_NAME(WormholeTransiting)
 @protocol MMWormholeTransiting <NSObject>
 
 /**
@@ -70,6 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+NS_SWIFT_NAME(WormholeTransitingDelegate)
 @protocol MMWormholeTransitingDelegate <NSObject>
 
 - (void)notifyListenerForMessageWithIdentifier:(nullable NSString *)identifier message:(nullable id<NSCoding>)message;

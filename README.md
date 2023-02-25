@@ -21,7 +21,7 @@ The wormhole also supports CFNotificationCenter Darwin Notifications in an effor
 
 ## Getting Started
 
-- Install MMWormhole via CocoaPods or by downloading the Source files
+- Install MMWormhole via CocoaPods or SPM or by downloading the Source files
 - [Configure your App and Extension to support App Groups](https://developer.apple.com/library/ios/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html)
 - Begin using MMWormhole to pass messages between your App and Extension
 
@@ -31,11 +31,25 @@ The MMWormhole Example app will only work with your shared App Group identifiers
 
 ---
 ## Installing MMWormhole
-<img src="https://cocoapod-badges.herokuapp.com/v/MMWormhole/badge.png"/><br/>
-You can install Wormhole in your project by using [CocoaPods](https://github.com/cocoapods/cocoapods):
+### Cocoapods
 
 ```Ruby
 pod 'MMWormhole', '~> 2.0.0'
+```
+
+### SwiftPM
+
+```swift
+let package = Package(
+    ...
+    dependencies: [
+        .package(url: "https://github.com/mgray88/MMWormhole.git", from: "2.1.1"),
+    ],
+    targets: [
+        .target(name: "MyApp", dependencies: [.productItem(name: "Wormhole", package: "MMWormhole")]),
+    ],
+    ...
+)
 ```
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)<br/>

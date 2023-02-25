@@ -34,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
  This class is able to be subclassed to provide slightly different file reading and writing behavior
  while still maintaining the logic for naming a file within the given directory and app group.
  */
+NS_SWIFT_NAME(WormholeFileTransiting)
 @interface MMWormholeFileTransiting : NSObject <MMWormholeTransiting>
 
 /**

@@ -27,6 +27,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(WormholeSession)
 @interface MMWormholeSession : MMWormhole <WCSessionDelegate>
 
 /**
